@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="#2A0464F4"
+    tools:context=".MainActivity">
+
+    <!-- Add a title TextView -->
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:fontFamily="sans-serif-medium"
+        android:paddingBottom="0dp"
+        android:text="TicTacToe"
+        android:textColor="#000000"
+        android:textSize="30sp"/>
+
+    <TableLayout
+        android:id="@+id/mainBoard"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top|center"
+        android:clickable="true"
+        android:gravity="center"
+        android:layout_marginTop="40dp"
+        android:nestedScrollingEnabled="false"
+        android:padding="10dp">
+
+        <TableRow
+            android:id="@+id/row0"
+            style="@style/TableRow"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/tx_a1"
+                style="@style/LeftCell"
+                android:width="50dp"
+                android:layout_column="0"></TextView>
+
+            <TextView
+                android:id="@+id/tx_a2"
+                style="@style/MiddleCell"
+                android:width="50dp"
+                android:layout_column="1"></TextView>
+
+            <TextView
+                android:id="@+id/tx_a3"
+                style="@style/RightCell"
+                android:width="50dp"
+                android:layout_column="2"></TextView>
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/row1"
+            style="@style/TableRow"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/tx_a4"
+                style="@style/LeftCell"
+                android:width="50dp"
+                android:layout_column="0"></TextView>
+
+            <TextView
+                android:id="@+id/tx_a5"
+                style="@style/MiddleCell"
+                android:width="50dp"
+                android:layout_column="1"></TextView>
+
+            <TextView
+                android:id="@+id/tx_a6"
+                style="@style/RightCell"
+                android:width="50dp"
+                android:layout_column="2"></TextView>
+
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/row2"
+            style="@style/TableRow"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/tx_a7"
+                style="@style/LeftCell"
+                android:width="50dp"
+                android:layout_column="0"></TextView>
+
+            <TextView
+                android:id="@+id/tx_a8"
+                style="@style/MiddleCell"
+                android:width="50dp"
+                android:layout_column="1"></TextView>
+
+            <TextView
+                android:id="@+id/tx_a9"
+                style="@style/RightCell"
+                android:width="50dp"
+                android:layout_column="2"></TextView>
+
+        </TableRow>
+
+    </TableLayout>
+
+    <TextView
+        android:id="@+id/tx_turn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:fontFamily="sans-serif-medium"
+        android:padding="10dp"
+        android:layout_marginTop="10dp"
+        android:text="Turn of Player: 1"
+        android:textColor="@android:color/black"
+        android:textSize="24sp" />
+
+    <Button
+        android:id="@+id/btn_play_again"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:backgroundTint="#0FF4EC"
+        android:textColor="@android:color/black"
+        android:text="Play Again" />
+
+    <Button
+        android:id="@+id/btn_play_with_computer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:backgroundTint="#0FF4EC"
+        android:textColor="@android:color/black"
+        android:text="Play Against Computer" />
+
+    <Button
+        android:id="@+id/btn_play_with_player"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:textColor="@android:color/black"
+        android:backgroundTint="#0FF4EC"
+        android:text="Play Against Player" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp">
+
+        <TextView
+            android:id="@+id/player1_score"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="Player 1 Score: 0"
+            android:gravity="center" />
+
+        <TextView
+            android:id="@+id/player2_score"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="Player 2 Score: 0"
+            android:gravity="center" />
+
+    </LinearLayout>
+
+</LinearLayout>
